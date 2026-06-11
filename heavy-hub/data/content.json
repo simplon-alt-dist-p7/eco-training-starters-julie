@@ -1,0 +1,533 @@
+[
+  {
+    "id": "content-1",
+    "title": "Parcours accompagne 1",
+    "format": "video",
+    "level": "debutant",
+    "duration": 18,
+    "heroAsset": "/assets/hub-content-1.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-2",
+    "title": "Parcours accompagne 2",
+    "format": "fiche",
+    "level": "intermediaire",
+    "duration": 25,
+    "heroAsset": "/assets/hub-content-2.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-3",
+    "title": "Parcours accompagne 3",
+    "format": "atelier",
+    "level": "avance",
+    "duration": 32,
+    "heroAsset": "/assets/hub-content-3.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-4",
+    "title": "Parcours accompagne 4",
+    "format": "video",
+    "level": "debutant",
+    "duration": 39,
+    "heroAsset": "/assets/hub-content-1.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-5",
+    "title": "Parcours accompagne 5",
+    "format": "fiche",
+    "level": "intermediaire",
+    "duration": 46,
+    "heroAsset": "/assets/hub-content-2.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-6",
+    "title": "Parcours accompagne 6",
+    "format": "atelier",
+    "level": "avance",
+    "duration": 53,
+    "heroAsset": "/assets/hub-content-3.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-7",
+    "title": "Parcours accompagne 7",
+    "format": "video",
+    "level": "debutant",
+    "duration": 60,
+    "heroAsset": "/assets/hub-content-1.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-8",
+    "title": "Parcours accompagne 8",
+    "format": "fiche",
+    "level": "intermediaire",
+    "duration": 67,
+    "heroAsset": "/assets/hub-content-2.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "content-9",
+    "title": "Parcours accompagne 9",
+    "format": "atelier",
+    "level": "avance",
+    "duration": 74,
+    "heroAsset": "/assets/hub-content-3.svg",
+    "teaser": "Une ressource accompagnee avec resume, modules, supports et reperes pratiques pour suivre le parcours dans la duree.",
+    "body": "Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session. Le detail du contenu rassemble objectifs, progression, ressources et livrables afin de donner un cadre complet a chaque session.",
+    "modules": [
+      {
+        "title": "Module 1",
+        "progress": 0,
+        "attachmentCount": 4
+      },
+      {
+        "title": "Module 2",
+        "progress": 20,
+        "attachmentCount": 5
+      },
+      {
+        "title": "Module 3",
+        "progress": 40,
+        "attachmentCount": 6
+      },
+      {
+        "title": "Module 4",
+        "progress": 60,
+        "attachmentCount": 7
+      },
+      {
+        "title": "Module 5",
+        "progress": 80,
+        "attachmentCount": 8
+      }
+    ],
+    "attachments": [
+      {
+        "name": "Ressource 1",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 2",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 3",
+        "kind": "pdf"
+      },
+      {
+        "name": "Ressource 4",
+        "kind": "slide"
+      },
+      {
+        "name": "Ressource 5",
+        "kind": "pdf"
+      }
+    ]
+  }
+]

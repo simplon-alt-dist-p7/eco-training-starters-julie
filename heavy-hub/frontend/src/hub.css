@@ -1,0 +1,476 @@
+:root {
+  --hub-bg: #eef3f6;
+  --hub-surface: rgba(255, 255, 255, 0.94);
+  --hub-surface-strong: #ffffff;
+  --hub-text: #20313a;
+  --hub-muted: #647883;
+  --hub-line: rgba(32, 49, 58, 0.1);
+  --hub-accent: #0e7490;
+  --hub-accent-soft: #d9eef3;
+  --hub-olive: #6f8b54;
+  color: var(--hub-text);
+  background:
+    radial-gradient(circle at top left, rgba(14, 116, 144, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(111, 139, 84, 0.14), transparent 30%),
+    linear-gradient(180deg, #f3f6f8 0%, #e8eff3 100%);
+  font-family: 'Optima', 'Gill Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  line-height: 1.6;
+}
+
+a,
+button {
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.hub-loading-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.hub-app {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+}
+
+.hub-header,
+.hub-focus-panel,
+.hub-summary-card,
+.hub-panel,
+.hub-content-card,
+.hub-message-card,
+.hub-notification-card,
+.hub-profile-hero {
+  border: 1px solid var(--hub-line);
+  background: var(--hub-surface);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(31, 45, 55, 0.08);
+}
+
+.hub-header {
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+  backdrop-filter: blur(14px);
+}
+
+.hub-branding {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.hub-branding strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.hub-branding p,
+.hub-hero-copy p,
+.hub-message-card p,
+.hub-card-copy p,
+.hub-detail-card p,
+.hub-notification-card p,
+.hub-activity-row small,
+.hub-attachment-row span,
+.hub-module-row small,
+.hub-profile-panel p {
+  margin: 0;
+  color: var(--hub-muted);
+}
+
+.hub-header-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hub-nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hub-nav a {
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.hub-nav a.active {
+  background: var(--hub-accent-soft);
+  color: var(--hub-accent);
+}
+
+.hub-header-chip,
+.hub-chip-row span,
+.hub-badge-row span,
+.hub-meta-row span,
+.hub-notification-card span,
+.hub-card-header span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.hub-header-chip,
+.hub-chip-row span,
+.hub-badge-row span,
+.hub-meta-row span {
+  background: var(--hub-accent-soft);
+  color: var(--hub-accent);
+}
+
+.hub-eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.74rem;
+  color: var(--hub-muted);
+}
+
+.hub-main,
+.hub-stack,
+.hub-hero,
+.hub-summary-grid,
+.hub-card-grid,
+.hub-dashboard-grid,
+.hub-profile-layout,
+.hub-library-layout,
+.hub-detail-grid,
+.hub-detail-hero {
+  display: grid;
+  gap: 24px;
+}
+
+.hub-hero {
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  align-items: start;
+}
+
+.hub-hero-copy,
+.hub-focus-panel,
+.hub-panel,
+.hub-detail-card,
+.hub-profile-hero,
+.hub-filter-panel {
+  padding: 24px;
+}
+
+.hub-hero-copy {
+  border: 1px solid var(--hub-line);
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(233, 242, 246, 0.98));
+}
+
+.hub-hero-copy h1,
+.hub-filter-panel h1,
+.hub-detail-card h1,
+.hub-profile-hero h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(2.7rem, 4vw, 4.5rem);
+  line-height: 0.98;
+}
+
+.hub-chip-row,
+.hub-badge-row,
+.hub-meta-row,
+.hub-card-grid,
+.hub-notification-list,
+.hub-related-list,
+.hub-attachment-list,
+.hub-message-list,
+.hub-activity-list,
+.hub-module-list,
+.hub-filter-block,
+.hub-filter-chips,
+.hub-side-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.hub-chip-row,
+.hub-badge-row,
+.hub-meta-row,
+.hub-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hub-summary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hub-summary-card {
+  padding: 20px;
+}
+
+.hub-summary-card span,
+.hub-summary-card strong {
+  display: block;
+}
+
+.hub-summary-card strong {
+  margin-top: 8px;
+  font-size: 1.8rem;
+}
+
+.hub-section,
+.hub-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.hub-panel-header,
+.hub-card-header,
+.hub-card-footer,
+.hub-module-row,
+.hub-attachment-row,
+.hub-activity-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.hub-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hub-card-grid.compact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hub-content-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.hub-content-card.compact {
+  border-radius: 22px;
+}
+
+.hub-content-card img,
+.hub-detail-hero img,
+.hub-profile-hero img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hub-content-card img {
+  height: 220px;
+}
+
+.hub-card-copy {
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.hub-card-copy h3,
+.hub-panel-header h2 {
+  margin: 0;
+}
+
+.hub-card-footer a {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--hub-accent-soft);
+  color: var(--hub-accent);
+}
+
+.hub-message-card,
+.hub-notification-card {
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.hub-notification-card.read {
+  opacity: 0.72;
+}
+
+.hub-notification-card span,
+.hub-card-header span {
+  background: rgba(111, 139, 84, 0.14);
+  color: var(--hub-olive);
+}
+
+.hub-library-layout {
+  grid-template-columns: minmax(280px, 320px) 1fr;
+  align-items: start;
+}
+
+.hub-filter-panel {
+  position: sticky;
+  top: 112px;
+  border: 1px solid var(--hub-line);
+  border-radius: 30px;
+  background: var(--hub-surface);
+}
+
+.hub-filter-block strong {
+  display: block;
+}
+
+.hub-filter-chips button {
+  padding: 10px 14px;
+  border: 1px solid var(--hub-line);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hub-filter-chips button.active {
+  border-color: rgba(14, 116, 144, 0.24);
+  background: var(--hub-accent-soft);
+  color: var(--hub-accent);
+}
+
+.hub-library-grid,
+.hub-side-stack {
+  display: grid;
+  gap: 20px;
+}
+
+.hub-detail-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.95fr);
+}
+
+.hub-detail-hero img,
+.hub-profile-hero img {
+  border-radius: 28px;
+  min-height: 100%;
+}
+
+.hub-detail-card {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--hub-line);
+  border-radius: 28px;
+  background: var(--hub-surface);
+}
+
+.hub-detail-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  align-items: start;
+}
+
+.hub-module-list,
+.hub-activity-list,
+.hub-attachment-list,
+.hub-related-list {
+  align-content: start;
+}
+
+.hub-module-row,
+.hub-attachment-row,
+.hub-activity-row {
+  padding: 14px 0;
+  border-top: 1px solid var(--hub-line);
+}
+
+.hub-module-row:first-child,
+.hub-attachment-row:first-child,
+.hub-activity-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.hub-module-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 1fr) 52px;
+}
+
+.hub-progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(32, 49, 58, 0.08);
+  overflow: hidden;
+  align-self: center;
+}
+
+.hub-progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--hub-accent), #68a8ba);
+}
+
+.hub-dashboard-grid,
+.hub-profile-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hub-profile-panel,
+.hub-profile-hero {
+  display: grid;
+  gap: 16px;
+}
+
+.hub-profile-hero {
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+}
+
+.hub-profile-hero img {
+  border-radius: 24px;
+}
+
+@media (max-width: 1120px) {
+  .hub-header,
+  .hub-header-side,
+  .hub-hero,
+  .hub-summary-grid,
+  .hub-card-grid,
+  .hub-card-grid.compact-grid,
+  .hub-dashboard-grid,
+  .hub-profile-layout,
+  .hub-library-layout,
+  .hub-detail-grid,
+  .hub-detail-hero,
+  .hub-profile-hero,
+  .hub-module-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-header,
+  .hub-header-side {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hub-filter-panel {
+    position: static;
+  }
+}

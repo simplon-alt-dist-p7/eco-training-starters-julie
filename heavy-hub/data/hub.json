@@ -1,0 +1,201 @@
+{
+  "home": {
+    "title": "Portail Connexions",
+    "subtitle": "Retrouvez vos parcours, vos messages et vos ressources depuis un espace membre unifie."
+  },
+  "notifications": [
+    {
+      "id": "notif-1",
+      "title": "Mise a jour parcours 1",
+      "level": "high",
+      "createdAt": "2026-04-01T09:00:00Z",
+      "read": true
+    },
+    {
+      "id": "notif-2",
+      "title": "Mise a jour parcours 2",
+      "level": "info",
+      "createdAt": "2026-04-02T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-3",
+      "title": "Mise a jour parcours 3",
+      "level": "info",
+      "createdAt": "2026-04-03T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-4",
+      "title": "Mise a jour parcours 4",
+      "level": "high",
+      "createdAt": "2026-04-04T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-5",
+      "title": "Mise a jour parcours 5",
+      "level": "info",
+      "createdAt": "2026-04-05T09:00:00Z",
+      "read": true
+    },
+    {
+      "id": "notif-6",
+      "title": "Mise a jour parcours 6",
+      "level": "info",
+      "createdAt": "2026-04-06T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-7",
+      "title": "Mise a jour parcours 7",
+      "level": "high",
+      "createdAt": "2026-04-07T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-8",
+      "title": "Mise a jour parcours 8",
+      "level": "info",
+      "createdAt": "2026-04-08T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-9",
+      "title": "Mise a jour parcours 9",
+      "level": "info",
+      "createdAt": "2026-04-09T09:00:00Z",
+      "read": true
+    },
+    {
+      "id": "notif-10",
+      "title": "Mise a jour parcours 10",
+      "level": "high",
+      "createdAt": "2026-04-10T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-11",
+      "title": "Mise a jour parcours 11",
+      "level": "info",
+      "createdAt": "2026-04-11T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-12",
+      "title": "Mise a jour parcours 12",
+      "level": "info",
+      "createdAt": "2026-04-12T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-13",
+      "title": "Mise a jour parcours 13",
+      "level": "high",
+      "createdAt": "2026-04-13T09:00:00Z",
+      "read": true
+    },
+    {
+      "id": "notif-14",
+      "title": "Mise a jour parcours 14",
+      "level": "info",
+      "createdAt": "2026-04-14T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-15",
+      "title": "Mise a jour parcours 15",
+      "level": "info",
+      "createdAt": "2026-04-15T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-16",
+      "title": "Mise a jour parcours 16",
+      "level": "high",
+      "createdAt": "2026-04-16T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-17",
+      "title": "Mise a jour parcours 17",
+      "level": "info",
+      "createdAt": "2026-04-17T09:00:00Z",
+      "read": true
+    },
+    {
+      "id": "notif-18",
+      "title": "Mise a jour parcours 18",
+      "level": "info",
+      "createdAt": "2026-04-18T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-19",
+      "title": "Mise a jour parcours 19",
+      "level": "high",
+      "createdAt": "2026-04-19T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-20",
+      "title": "Mise a jour parcours 20",
+      "level": "info",
+      "createdAt": "2026-04-20T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-21",
+      "title": "Mise a jour parcours 21",
+      "level": "info",
+      "createdAt": "2026-04-01T09:00:00Z",
+      "read": true
+    },
+    {
+      "id": "notif-22",
+      "title": "Mise a jour parcours 22",
+      "level": "high",
+      "createdAt": "2026-04-02T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-23",
+      "title": "Mise a jour parcours 23",
+      "level": "info",
+      "createdAt": "2026-04-03T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": "notif-24",
+      "title": "Mise a jour parcours 24",
+      "level": "info",
+      "createdAt": "2026-04-04T09:00:00Z",
+      "read": false
+    }
+  ],
+  "profile": {
+    "name": "Camille Bernard",
+    "role": "Responsable parcours",
+    "location": "Lyon",
+    "avatar": "/assets/hub-avatar-1.svg",
+    "badges": [
+      "mentor",
+      "animateur",
+      "beta-testeur"
+    ],
+    "recentHistory": [
+      "Consultation recente 1",
+      "Consultation recente 2",
+      "Consultation recente 3",
+      "Consultation recente 4",
+      "Consultation recente 5",
+      "Consultation recente 6",
+      "Consultation recente 7",
+      "Consultation recente 8",
+      "Consultation recente 9",
+      "Consultation recente 10",
+      "Consultation recente 11",
+      "Consultation recente 12"
+    ]
+  }
+}
