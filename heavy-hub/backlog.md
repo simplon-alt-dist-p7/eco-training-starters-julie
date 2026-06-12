@@ -11,13 +11,13 @@ Remplacer chaque champ entre crochets par votre contenu.
 
 ## User story 1
 
-- Contexte: En tant que [role], je veux [action], afin de [valeur attendue].
-- Objectif: [objectif qualitatif ou chiffre]
-- Bonne pratique d eco-conception ciblee: [bonne pratique]
-- KPI associe: [indicateur de suivi]
-- Repo ou ecran concerne: [page, composant, parcours ou endpoint]
-- Critere de reussite: [resultat observable ou mesurable]
-- Niveau de priorite: [haute, moyenne ou basse]
+- Contexte: En tant que **Développeur Frontend**, je veux **Optimiser le CSS**, afin de **Alléger le fichier hub.css**.
+- Objectif: Réduire la taille du fichier CSS d'au moins 30% et améliorer le First Contentful Paint (FCP) de ~10% sur la page d'accueil.
+- Bonne pratique d'eco-conception ciblee: Regrouper règles, supprimer duplications, réutiliser variables CSS et réduire la spécificité inutile.
+- KPI associe: Taille du CSS (Ko), FCP (ms), nombre de règles CSS et nombre de sélecteurs.
+- Repo ou ecran concerne: heavy-hub/frontend/src/hub.css — pages: Home, Library, Content, Dashboard, Profile.
+- Critere de reussite: Taille du CSS réduite ≥30% et FCP amélioré ≥10% mesurés avant/après sur une page représentative.
+- Niveau de priorite: haute
 
 ## User story 2
 
