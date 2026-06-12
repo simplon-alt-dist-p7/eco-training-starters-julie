@@ -61,6 +61,7 @@ button {
 .hub-summary-card,
 .hub-panel,
 .hub-content-card,
+.hub-detail-card,
 .hub-message-card,
 .hub-notification-card,
 .hub-profile-hero {
@@ -376,9 +377,6 @@ button {
 .hub-detail-card {
   display: grid;
   gap: 16px;
-  border: 1px solid var(--hub-line);
-  border-radius: 28px;
-  background: var(--hub-surface);
 }
 
 .hub-detail-grid {
