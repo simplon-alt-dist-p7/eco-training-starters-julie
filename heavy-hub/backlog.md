@@ -21,7 +21,7 @@ Remplacer chaque champ entre crochets par votre contenu.
 
 ## User story 2
 
-- Contexte: En tant que [role], je veux [action], afin de [valeur attendue].
+- Contexte: En tant que **Utilisateur**, je veux **Avoir accès à un Darkmode**, afin de **Soulager la fatigue visuelle et consommer moins de ressources**.
 - Objectif: [objectif qualitatif ou chiffre]
 - Bonne pratique d eco-conception ciblee: [bonne pratique]
 - KPI associe: [indicateur de suivi]

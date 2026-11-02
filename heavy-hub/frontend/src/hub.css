@@ -1,5 +1,6 @@
 :root {
   --hub-bg: #eef3f6;
+  --hub-hero-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(233, 242, 246, 0.98));
   --hub-surface: rgba(255, 255, 255, 0.94);
   --hub-surface-strong: #ffffff;
   --hub-text: #20313a;
@@ -190,7 +191,7 @@ button {
 .hub-hero-copy {
   border: 1px solid var(--hub-line);
   border-radius: 30px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(233, 242, 246, 0.98));
+  background: var(--hub-hero-bg, var(--hub-surface));
 }
 
 .hub-hero-copy h1,
@@ -471,4 +472,34 @@ button {
   .hub-filter-panel {
     position: static;
   }
+}
+
+/* Dark theme overrides (applied when `data-theme="dark"` on the document element) */
+:root[data-theme="dark"] {
+  --hub-bg: #071219;
+  --hub-surface: rgba(10, 18, 23, 0.75);
+  --hub-surface-strong: #0b1a20;
+  --hub-text: #e6f3f5;
+  --hub-muted: #9fb3b8;
+  --hub-line: rgba(255, 255, 255, 0.06);
+  --hub-accent: #60d0e8;
+  --hub-accent-soft: rgba(96, 208, 232, 0.08);
+  --hub-olive: #88a875;
+  background: linear-gradient(180deg, #071219 0%, #081822 100%);
+  --hub-hero-bg: linear-gradient(135deg, rgba(11, 26, 32, 0.6), rgba(9, 24, 34, 0.72));
+}
+
+.hub-theme-toggle {
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid var(--hub-line);
+  color: var(--hub-text);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.hub-theme-toggle:hover {
+  background: var(--hub-accent-soft);
 }

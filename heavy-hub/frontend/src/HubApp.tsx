@@ -186,7 +186,7 @@ function averageProgress(item: DisplayContentItem) {
   return Math.round(item.modules.reduce((total, module) => total + module.progress, 0) / item.modules.length);
 }
 
-function PortalHeader({ unreadCount }: { unreadCount: number }) {
+function PortalHeader({ unreadCount, theme, onToggleTheme }: { unreadCount: number; theme: 'light' | 'dark'; onToggleTheme: () => void }) {
   return (
     <header className="hub-header">
       <div className="hub-branding">
@@ -207,6 +207,14 @@ function PortalHeader({ unreadCount }: { unreadCount: number }) {
           <NavLink to="/profile">Profil</NavLink>
         </nav>
         <span className="hub-header-chip">{unreadCount} non lu(s)</span>
+        <button
+          className="hub-theme-toggle"
+          onClick={onToggleTheme}
+          aria-label="Basculer thème"
+          title={theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre'}
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
       </div>
     </header>
   );
@@ -658,6 +666,16 @@ export default function HubApp() {
   const [dashboard, setDashboard] = useState<DashboardPayload | null>(null);
   const [notifications, setNotifications] = useState<NotificationItem[]>([]);
   const [profile, setProfile] = useState<ProfilePayload | null>(null);
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => (typeof window !== 'undefined' && window.localStorage.getItem('hub-theme') === 'dark') ? 'dark' : 'light');
+
+  useEffect(() => {
+    try {
+      document.documentElement.setAttribute('data-theme', theme);
+      window.localStorage.setItem('hub-theme', theme);
+    } catch (e) {
+      // ignore (e.g. during SSR or private mode)
+    }
+  }, [theme]);
 
   const refreshNotifications = () => {
     fetchJson<NotificationsPayload>('/api/notifications').then((payload) => {
@@ -699,7 +717,11 @@ export default function HubApp() {
 
   return (
     <div className="hub-app">
-      <PortalHeader unreadCount={notifications.filter((item) => !item.read).length} />
+      <PortalHeader
+        unreadCount={notifications.filter((item) => !item.read).length}
+        theme={theme}
+        onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      />
       <main className="hub-main">
         <Routes>
           <Route
