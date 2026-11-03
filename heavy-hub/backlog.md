@@ -50,6 +50,17 @@ Remplacer chaque champ entre crochets par votre contenu.
 - Niveau de priorite: haute
 
 
+## User story 5
+
+- Contexte: En tant qu’**Utilisateur**, je veux **que la mise à jour d’une information ne relance pas le rendu des écrans qui ne la consultent pas**, afin de **conserver une navigation fluide**.
+- Objectif: Séparer le chargement des données, l’état partagé et la définition des routes, puis limiter la propagation des mises à jour aux composants concernés.
+- Bonne pratique d eco-conception ciblee: Définir des responsabilités et des frontières d’état adaptées; éviter les mises à jour globales et les rendus coûteux sans mesure préalable.
+- KPI associe: Nombre de composants rendus lors d’une mise à jour des notifications, durée de rendu mesurée avec React Profiler, nombre d’états gérés par le composant racine.
+- Repo ou ecran concerne: heavy-hub/frontend/src/HubApp.tsx, heavy-hub/frontend/src/app/HubApp.tsx et composants de pages et de navigation.
+- Critere de reussite: Une mise à jour des notifications actualise les éléments qui les affichent sans relancer le rendu des pages sans lien avec ces données; le chargement des données est séparé du composant qui déclare les routes. Le comportement est vérifié avec React Profiler avant/après.
+- Niveau de priorite: moyenne
+
+
 ## Notes
 
 - Vous pouvez ajouter d autres user stories si necessaire.
