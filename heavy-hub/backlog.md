@@ -39,6 +39,17 @@ Remplacer chaque champ entre crochets par votre contenu.
 - Critere de reussite: Aucun rendu ne réinitialise ou ne duplique le temporisateur de notifications; aucun rafraîchissement n’est effectué lorsque l’écran Notifications est quitté; les écrans ne chargent que les données nécessaires et les navigations réutilisent les données déjà disponibles lorsqu’elles sont encore valides. Une comparaison avant/après documente les requêtes par écran.
 - Niveau de priorite: haute
 
+## User story 4
+
+- Contexte: En tant que **Développeur Frontend**, je veux **transformer chaque contenu une seule fois et réutiliser le résultat**, afin de **limiter le travail répété lors de l’affichage des différentes pages**.
+- Objectif: Centraliser les transformations des contenus dans le mapper existant et éviter de décorer à nouveau les mêmes éléments pour la bibliothèque, l’accueil, le suivi et les contenus associés.
+- Bonne pratique d eco-conception ciblee: Effectuer les transformations à l’entrée des données ou les mettre en cache au niveau approprié; ne pas recalculer sans mesure démontrant un bénéfice.
+- KPI associe: Nombre d’appels de transformation par contenu et par chargement, durée cumulée des transformations (ms), temps de rendu des listes.
+- Repo ou ecran concerne: heavy-hub/frontend/src/utils/contentMappers.ts, heavy-hub/frontend/src/HubApp.tsx, heavy-hub/frontend/src/app/HubApp.tsx, pages Accueil, Bibliothèque, Suivi et détail contenu.
+- Critere de reussite: Chaque contenu reçu est transformé au plus une fois par chargement de données, le résultat est réutilisé par les pages concernées et les libellés affichés restent identiques. Une mesure avant/après confirme le nombre d’appels et la durée des transformations.
+- Niveau de priorite: haute
+
+
 ## Notes
 
 - Vous pouvez ajouter d autres user stories si necessaire.
