@@ -60,6 +60,16 @@ Remplacer chaque champ entre crochets par votre contenu.
 - Critere de reussite: Une mise à jour des notifications actualise les éléments qui les affichent sans relancer le rendu des pages sans lien avec ces données; le chargement des données est séparé du composant qui déclare les routes. Le comportement est vérifié avec React Profiler avant/après.
 - Niveau de priorite: moyenne
 
+## User story 6
+
+- Contexte: En tant qu’**Utilisateur**, je veux **voir un état de chargement, une erreur ou un contenu indisponible clairement identifié**, afin de **ne pas confondre des données anciennes avec le résultat demandé**.
+- Objectif: Fiabiliser les chargements initiaux et ceux des détails de contenu, empêcher les réponses obsolètes d’écraser les données récentes et distinguer les états de chargement, d’erreur et d’absence de résultat.
+- Bonne pratique d eco-conception ciblee: Annuler les requêtes devenues inutiles avec AbortController, nettoyer les effets asynchrones et éviter de conserver ou de recalculer des données périmées.
+- KPI associe: Nombre de requêtes obsolètes encore actives après changement d’écran ou d’identifiant, taux de réponses tardives appliquées, couverture des états de chargement et d’erreur.
+- Repo ou ecran concerne: heavy-hub/frontend/src/HubApp.tsx, heavy-hub/frontend/src/app/HubApp.tsx, écran Content et appels de heavy-hub/frontend/src/services/hubService.ts.
+- Critere de reussite: Lors d’un changement rapide d’identifiant, seul le contenu correspondant au dernier identifiant est affiché; les requêtes obsolètes sont annulées; les erreurs et l’absence de contenu ont des états explicites; les chargements initiaux affichent une erreur exploitable en cas d’échec.
+- Niveau de priorite: haute
+
 
 ## Notes
 
