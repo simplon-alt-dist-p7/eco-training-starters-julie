@@ -31,13 +31,13 @@ Remplacer chaque champ entre crochets par votre contenu.
 
 ## User story 3
 
-- Contexte: En tant que [role], je veux [action], afin de [valeur attendue].
-- Objectif: [objectif qualitatif ou chiffre]
-- Bonne pratique d eco-conception ciblee: [bonne pratique]
-- KPI associe: [indicateur de suivi]
-- Repo ou ecran concerne: [page, composant, parcours ou endpoint]
-- Critere de reussite: [resultat observable ou mesurable]
-- Niveau de priorite: [haute, moyenne ou basse]
+- Contexte: En tant qu’**Utilisateur**, je veux **que seules les données nécessaires à mon écran soient chargées et que les messages ne soient actualisés que lorsque c’est utile**, afin de **réduire l’attente et les échanges réseau superflus**.
+- Objectif: Mesurer les appels actuels, éviter les chargements et rafraîchissements déclenchés inutilement, stabiliser le rafraîchissement des notifications et mutualiser les données réutilisées entre les pages.
+- Bonne pratique d eco-conception ciblee: Charger les données au plus près de leur usage, dédupliquer les requêtes, réutiliser un cache en mémoire adapté et nettoyer les temporisateurs quand l’écran concerné est quitté.
+- KPI associe: Nombre de requêtes API par écran et par navigation, nombre de requêtes dupliquées, nombre de rafraîchissements de notifications hors de leur écran, volume de données transférées.
+- Repo ou ecran concerne: heavy-hub/frontend/src/HubApp.tsx et heavy-hub/frontend/src/app/HubApp.tsx (chargement et orchestration), heavy-hub/frontend/src/services/hubService.ts (appels API), écran Notifications.
+- Critere de reussite: Aucun rendu ne réinitialise ou ne duplique le temporisateur de notifications; aucun rafraîchissement n’est effectué lorsque l’écran Notifications est quitté; les écrans ne chargent que les données nécessaires et les navigations réutilisent les données déjà disponibles lorsqu’elles sont encore valides. Une comparaison avant/après documente les requêtes par écran.
+- Niveau de priorite: haute
 
 ## Notes
 
