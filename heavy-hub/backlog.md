@@ -49,7 +49,6 @@ Remplacer chaque champ entre crochets par votre contenu.
 - Critere de reussite: Chaque contenu reçu est transformé au plus une fois par chargement de données, le résultat est réutilisé par les pages concernées et les libellés affichés restent identiques. Une mesure avant/après confirme le nombre d’appels et la durée des transformations.
 - Niveau de priorite: haute
 
-
 ## User story 5
 
 - Contexte: En tant qu’**Utilisateur**, je veux **que la mise à jour d’une information ne relance pas le rendu des écrans qui ne la consultent pas**, afin de **conserver une navigation fluide**.
@@ -70,6 +69,15 @@ Remplacer chaque champ entre crochets par votre contenu.
 - Critere de reussite: Lors d’un changement rapide d’identifiant, seul le contenu correspondant au dernier identifiant est affiché; les requêtes obsolètes sont annulées; les erreurs et l’absence de contenu ont des états explicites; les chargements initiaux affichent une erreur exploitable en cas d’échec.
 - Niveau de priorite: haute
 
+## User story 7
+
+- Contexte: En tant qu’**Utilisateur**, je veux **parcourir la bibliothèque sans attendre le rendu de toute une grande liste**, afin de **trouver rapidement une ressource**.
+- Objectif: Mesurer le coût de rendu des listes sur un jeu de données représentatif et afficher progressivement les grands volumes par pagination ou virtualisation si les mesures le justifient.
+- Bonne pratique d eco-conception ciblee: Éviter les mémorisations systématiques; profiler les calculs et les rendus, puis privilégier la réduction du nombre d’éléments affichés avant d’ajouter des optimisations de références.
+- KPI associe: Durée de rendu de la liste (ms), nombre d’éléments présents dans le DOM, temps avant affichage des premiers résultats, nombre de mémorisations ajoutées.
+- Repo ou ecran concerne: heavy-hub/frontend/src/HubApp.tsx et heavy-hub/frontend/src/pages/LibraryPage.tsx (filtres et affichage de la bibliothèque).
+- Critere de reussite: Un profilage sur un volume représentatif est consigné avant toute optimisation; au-delà du seuil de volume défini à partir de ce profilage, la liste est paginée ou virtualisée et le nombre d’éléments montés est limité. Toute mémorisation ajoutée répond à un coût mesuré et est justifiée par une comparaison avant/après.
+- Niveau de priorite: moyenne
 
 ## Notes
 
